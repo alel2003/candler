@@ -1,0 +1,518 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-10-16 01:24+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: candler/settings.py:121
+msgid "English"
+msgstr "Английский"
+
+#: candler/settings.py:122
+msgid "Русский"
+msgstr "Русский"
+
+#: main/forms.py:13
+msgid "Name"
+msgstr "Имя"
+
+#: main/forms.py:16
+msgid "Email"
+msgstr "E-mail"
+
+#: main/templates/main/index.html:28
+msgid "title"
+msgstr "HM-Candler"
+
+#: main/templates/main/index.html:42 main/templates/main/index.html:80
+#: main/templates/main/index.html:764
+msgid "aboutUs"
+msgstr "Про нас"
+
+#: main/templates/main/index.html:43 main/templates/main/index.html:81
+#: main/templates/main/index.html:765
+msgid "goods"
+msgstr "Каталог"
+
+#: main/templates/main/index.html:44 main/templates/main/index.html:82
+#: main/templates/main/index.html:766
+msgid "teachers"
+msgstr "Команда"
+
+#: main/templates/main/index.html:45 main/templates/main/index.html:83
+#: main/templates/main/index.html:767
+msgid "reviews"
+msgstr "отзывы"
+
+#: main/templates/main/index.html:46 main/templates/main/index.html:84
+#: main/templates/main/index.html:768
+msgid "courses"
+msgstr "Курсы"
+
+#: main/templates/main/index.html:47 main/templates/main/index.html:85
+#: main/templates/main/index.html:769
+msgid "contact"
+msgstr "Контакты"
+
+#: main/templates/main/index.html:53
+msgid "langues"
+msgstr "языки"
+
+#: main/templates/main/index.html:92
+msgid "uk"
+msgstr ""
+
+#: main/templates/main/index.html:93
+msgid "en"
+msgstr ""
+
+#: main/templates/main/index.html:109
+msgid "atmosphereTitle"
+msgstr "Создайте атмосферу уюта и гармонии!"
+
+#: main/templates/main/index.html:112
+msgid "atmosphereText"
+msgstr ""
+"Створіть особливу атмосферу у своєму домі з нашою екологічно чистою та "
+"якісною продукцією зі 100% натуральної соєвого воску."
+
+#: main/templates/main/index.html:115 main/templates/main/index.html:178
+#: main/templates/main/index.html:191 main/templates/main/index.html:202
+#: main/templates/main/index.html:213
+msgid "buy"
+msgstr "Купить"
+
+#: main/templates/main/index.html:129
+msgid "aboutUsTitle"
+msgstr "Про нас"
+
+#: main/templates/main/index.html:133
+msgid "aboutTextOne"
+msgstr ""
+"Богдан создатель бренда не всегда заинтересован в изготовлении разнообразных "
+"вещей на дому. Он регулярно экспериментировал с разными материалами и "
+"инструментами, попробовав свои силы во многих отраслях, включая изготовление "
+"свечей."
+
+#: main/templates/main/index.html:135
+msgid "aboutTextTwo"
+msgstr ""
+"Соевый воск изготавливается из соевых бобов, сращиваемых в Дании, и этот вид "
+"воска является экологически чистым и безопасным для здоровья."
+
+#: main/templates/main/index.html:143
+msgid "aboutMomentText"
+msgstr "Наслаждайтесь моментом"
+
+#: main/templates/main/index.html:149
+msgid "aboutAtmosphereText"
+msgstr "Создайте любимую атмосферу"
+
+#: main/templates/main/index.html:163
+msgid "goodsTitle"
+msgstr "Наши товары"
+
+#: main/templates/main/index.html:166
+msgid "goodsText"
+msgstr ""
+"Мы используем только лучшие качественные материалы: соевый воск, восковые "
+"красители, высококачественные ароматические масла и хлопчатобумажные "
+"фитильцы. Оттенки свеч очень гармонично сочетаются с ароматом, создавая "
+"незабываемую атмосферу в вашем доме."
+
+#: main/templates/main/index.html:173
+msgid "goodsTitleHeart"
+msgstr "Сердце любви"
+
+#: main/templates/main/index.html:175
+msgid "goodsTextToryandi"
+msgstr ""
+"Запах: нежный аромат розы и ванили.Для чего: для атмосферы романтического "
+"настроения"
+
+#: main/templates/main/index.html:185
+msgid "goodsTitleCharm"
+msgstr "Вихрь любви"
+
+#: main/templates/main/index.html:188 main/templates/main/index.html:210
+msgid "goodsTextLavender"
+msgstr "Запах: нежный аромат лаванды.Для чего: для создания атмосферы уюта"
+
+#: main/templates/main/index.html:197
+msgid "goodsTitleVeselka"
+msgstr "Радуга"
+
+#: main/templates/main/index.html:199
+msgid "goodsTextLime"
+msgstr "Запах: Свежий аромат лайма.Зачем: для энергии и свежести в помещении."
+
+#: main/templates/main/index.html:208
+msgid "goodsTextLove"
+msgstr "Женское очарование"
+
+#: main/templates/main/index.html:227
+msgid "creationTitle"
+msgstr "Этапы создания свечей"
+
+#: main/templates/main/index.html:230
+msgid "creationText"
+msgstr "Создание свечи из соевого воска может состоять из следующих этапов:"
+
+#: main/templates/main/index.html:237 main/templates/main/index.html:281
+#: main/templates/main/index.html:324
+msgid "materialsText"
+msgstr ""
+"Подготовка материалов: мелкие фрагменты соевого воска, фитиль для свечи, "
+"ароматизаторы, красители и другие дополнительные материалы."
+
+#: main/templates/main/index.html:248
+msgid "formsText"
+msgstr ""
+"Подготовка формы: выбор формы для свечи и подготовка ее к наполнению воском."
+
+#: main/templates/main/index.html:260
+msgid "waxText"
+msgstr ""
+"Приготовление воска: расплавление соевого воска в плавильном устройстве до "
+"нужной температуры. Добавление ароматизаторов и красителей при необходимости."
+
+#: main/templates/main/index.html:271
+msgid "wickText"
+msgstr ""
+"Подготовка фитиля: вставка фитиля в форму и зафиксирование его так, чтобы он "
+"был равномерно напряжен."
+
+#: main/templates/main/index.html:291
+msgid "fillingFormsText"
+msgstr ""
+"Наполнение формы: воск налить в форму, пока она не заполнится полностью. "
+"Ждать, пока он утвердится."
+
+#: main/templates/main/index.html:303
+msgid "waxPreparationText"
+msgstr ""
+"Приготовление воска: расплавление соевого воска в плавильном устройстве до "
+"нужной температуры. Добавление ароматизаторов и красителей при необходимости."
+
+#: main/templates/main/index.html:314
+msgid "preparingWickText"
+msgstr ""
+"Подготовка фитиля: вставка фитиля в форму и зафиксирование его так, чтобы он "
+"был равномерно напряжен."
+
+#: main/templates/main/index.html:335
+msgid "fillingFormText"
+msgstr ""
+"Наполнение формы: воск налить в форму, пока она не заполнится полностью. "
+"Ждать, пока он утвердится."
+
+#: main/templates/main/index.html:354
+msgid "coursesTitle"
+msgstr "Наши курсы"
+
+#: main/templates/main/index.html:357
+msgid "coursesText"
+msgstr ""
+"Наши курсы позволяют сделать первый шаг в новой карьере или углубить свои "
+"знания в своей области, развиваться как профессионал, а также улучшить "
+"качество своей жизни."
+
+#: main/templates/main/index.html:365
+msgid "makingCandlesText"
+msgstr "Основы изготовления свечей"
+
+#: main/templates/main/index.html:368 main/templates/main/index.html:393
+msgid "studyText"
+msgstr "Обучение"
+
+#: main/templates/main/index.html:368 main/templates/main/index.html:393
+msgid "year"
+msgstr "год"
+
+#: main/templates/main/index.html:371 main/templates/main/index.html:396
+msgid "price"
+msgstr "цена"
+
+#: main/templates/main/index.html:376
+msgid "manufacturingBasicsTitle"
+msgstr "Основы изготовления свечей"
+
+#: main/templates/main/index.html:379
+msgid "manufacturingBasicsText"
+msgstr "Будем обучать основам изготовления свечей из разных материалов."
+
+#: main/templates/main/index.html:382 main/templates/main/index.html:407
+msgid "buyCourses"
+msgstr "Купити курс"
+
+#: main/templates/main/index.html:390 main/templates/main/index.html:401
+msgid "artAromatherapyTitle"
+msgstr "Искусство ароматерапии"
+
+#: main/templates/main/index.html:404
+msgid "artAromatherapyText"
+msgstr ""
+"Будем изучать искусство ароматерапии и изготовление свечей с разными "
+"ароматами."
+
+#: main/templates/main/index.html:422
+msgid "teachersTitle"
+msgstr "Наши преподаватели"
+
+#: main/templates/main/index.html:425
+msgid "teachersText"
+msgstr ""
+"Эти люди работают вместе, чтобы создать курсы для вас, которые помогут вам "
+"начать собственный бизнес или хобби."
+
+#: main/templates/main/index.html:432
+msgid "teachersNameOne"
+msgstr "Преподаватель Богдан"
+
+#: main/templates/main/index.html:435
+msgid "teacherTextOne"
+msgstr "Имеет опыт преподавания и работы 4 года"
+
+#: main/templates/main/index.html:443
+msgid "teachersNameTwo"
+msgstr "Преподаватель Анна"
+
+#: main/templates/main/index.html:446
+msgid "teacherTextTwo"
+msgstr "Имеет опыт преподавания и работы 6 лет"
+
+#: main/templates/main/index.html:454
+msgid "teachersNameThree"
+msgstr "Преподаватель Галина"
+
+#: main/templates/main/index.html:457
+msgid "teacherTextThree"
+msgstr "Обучает сфере дизайна и декорирования"
+
+#: main/templates/main/index.html:465
+msgid "teachersNameFour"
+msgstr "Маркетолог Ольга"
+
+#: main/templates/main/index.html:468
+msgid "teacherTextFour"
+msgstr "Поможет вам с рекламой"
+
+#: main/templates/main/index.html:483
+msgid "reviewsTitle"
+msgstr "Отзывы от клиентов"
+
+#: main/templates/main/index.html:486
+msgid "reviewsText"
+msgstr ""
+"Наши покупатели имеют разный возраст, статус, занятия и интересы, но у них "
+"есть одна общая черта – они стремятся к гармонии и обретают радость в "
+"маленьких радостях жизни, которые создают атмосферу уюта и гармонии в их "
+"доме."
+
+#: main/templates/main/index.html:505
+msgid "carouselNameOne"
+msgstr "Іван Пилипенко"
+
+#: main/templates/main/index.html:508
+msgid "carouselTextOne"
+msgstr ""
+"Я заказал свечу в форме сердечка в День Святого Валентина для моей девушки и "
+"она была просто невероятна! Запах был очень приятным и романтичным, а форма "
+"сердечка была совершенной для этого праздника. Моя девушка была очень "
+"довольна подарком, и я точно закажу еще свеч от этого сайта!"
+
+#: main/templates/main/index.html:512 main/templates/main/index.html:532
+#: main/templates/main/index.html:552
+msgid "buyProduct"
+msgstr "Купить товар"
+
+#: main/templates/main/index.html:525
+msgid "carouselNameTwo"
+msgstr "Іван Пилипенко"
+
+#: main/templates/main/index.html:528
+msgid "carouselTextTwo"
+msgstr ""
+"Я заказал свечу в форме сердечка в День Святого Валентина для моей девушки и "
+"она была просто невероятна! Запах был очень приятным и романтичным, а форма "
+"сердечка была совершенной для этого праздника. Моя девушка была очень "
+"довольна подарком, и я точно закажу еще свеч от этого сайта!"
+
+#: main/templates/main/index.html:545
+msgid "carouselNameThree"
+msgstr "Іван Пилипенко"
+
+#: main/templates/main/index.html:548
+msgid "carouselTextThree"
+msgstr ""
+"Я заказал свечу в форме сердечка в День Святого Валентина для моей девушки и "
+"она была просто невероятна! Запах был очень приятным и романтичным, а форма "
+"сердечка была совершенной для этого праздника. Моя девушка была очень "
+"довольна подарком, и я точно закажу еще свеч от этого сайта!"
+
+#: main/templates/main/index.html:570
+msgid "certificatesTitle"
+msgstr "Сертификаты качества"
+
+#: main/templates/main/index.html:573
+msgid "certificatesText"
+msgstr "Сертификаты обеспечивают доверие и уверенность для наших клиентов."
+
+#: main/templates/main/index.html:611
+msgid "questionsTitle"
+msgstr "Часто задаваемые вопросы"
+
+#: main/templates/main/index.html:619
+msgid "accordionTitleOne"
+msgstr "Какие запахи доступны для свечей?"
+
+#: main/templates/main/index.html:624
+msgid "accordionTextOne"
+msgstr ""
+"1.Ваниль – теплый, сладкий и уютный аромат, напоминающий о домашнем уюте."
+"<br>2.Лаванда – приятный, успокаивающий и релаксирующий запах, который "
+"помогает снять стресс и напряжение.<br>3.Розовый грейпфрут – свежий, "
+"фруктовый и энергичный аромат, который помогает поднять настроение и "
+"взбодрить.<br>4.Кедр – древесный, земной и маскулинный аромат, придающий "
+"ощущение стабильности и надежности.<br>5.Яблоко и корица – теплый и уютный "
+"аромат, напоминающий о зимних праздниках и домашних условиях.<br>"
+
+#: main/templates/main/index.html:631
+msgid "accordionTitleTwo"
+msgstr "Как долго горят свечи?"
+
+#: main/templates/main/index.html:636
+msgid "accordionTextTwo"
+msgstr ""
+"1.Ваниль – теплый, сладкий и уютный аромат, напоминающий о домашнем уюте."
+"<br>2.Лаванда – приятный, успокаивающий и релаксирующий запах, который "
+"помогает снять стресс и напряжение.<br>3.Розовый грейпфрут – свежий, "
+"фруктовый и энергичный аромат, который помогает поднять настроение и "
+"взбодрить.<br>4.Кедр – древесный, земной и маскулинный аромат, придающий "
+"ощущение стабильности и надежности.<br>5.Яблоко и корица – теплый и уютный "
+"аромат, напоминающий о зимних праздниках и домашних условиях.<br>"
+
+#: main/templates/main/index.html:643
+msgid "accordionTitleThree"
+msgstr "Можно ли сделать заказ на индивидуальный дизайн свечи?"
+
+#: main/templates/main/index.html:648
+msgid "accordionTextThree"
+msgstr ""
+"1.Ваниль – теплый, сладкий и уютный аромат, напоминающий о домашнем уюте."
+"<br>2.Лаванда – приятный, успокаивающий и релаксирующий запах, который "
+"помогает снять стресс и напряжение.<br>3.Розовый грейпфрут – свежий, "
+"фруктовый и энергичный аромат, который помогает поднять настроение и "
+"взбодрить.<br>4.Кедр – древесный, земной и маскулинный аромат, придающий "
+"ощущение стабильности и надежности.<br>5.Яблоко и корица – теплый и уютный "
+"аромат, напоминающий о зимних праздниках и домашних условиях.<br>"
+
+#: main/templates/main/index.html:655
+msgid "accordionTitleFour"
+msgstr "Какие варианты доставки?"
+
+#: main/templates/main/index.html:660
+msgid "accordionTextFour"
+msgstr ""
+"1.Ваниль – теплый, сладкий и уютный аромат, напоминающий о домашнем уюте."
+"<br>2.Лаванда – приятный, успокаивающий и релаксирующий запах, который "
+"помогает снять стресс и напряжение.<br>3.Розовый грейпфрут – свежий, "
+"фруктовый и энергичный аромат, который помогает поднять настроение и "
+"взбодрить.<br>4.Кедр – древесный, земной и маскулинный аромат, придающий "
+"ощущение стабильности и надежности.<br>5.Яблоко и корица – теплый и уютный "
+"аромат, напоминающий о зимних праздниках и домашних условиях.<br>"
+
+#: main/templates/main/index.html:667
+msgid "accordionTitleFive"
+msgstr "Как оплачивать заказ?"
+
+#: main/templates/main/index.html:672
+msgid "accordionTextFive"
+msgstr ""
+"1.Ваниль – теплый, сладкий и уютный аромат, напоминающий о домашнем уюте."
+"<br>2.Лаванда – приятный, успокаивающий и релаксирующий запах, который "
+"помогает снять стресс и напряжение.<br>3.Розовый грейпфрут – свежий, "
+"фруктовый и энергичный аромат, который помогает поднять настроение и "
+"взбодрить.<br>4.Кедр – древесный, земной и маскулинный аромат, придающий "
+"ощущение стабильности и надежности.<br>5.Яблоко и корица – теплый и уютный "
+"аромат, напоминающий о зимних праздниках и домашних условиях.<br>"
+
+#: main/templates/main/index.html:679
+msgid "accordionTitleSix"
+msgstr "Как долго длится курс?"
+
+#: main/templates/main/index.html:684
+msgid "accordionTextSix"
+msgstr ""
+"1.Ваниль – теплый, сладкий и уютный аромат, напоминающий о домашнем уюте."
+"<br>2.Лаванда – приятный, успокаивающий и релаксирующий запах, который "
+"помогает снять стресс и напряжение.<br>3.Розовый грейпфрут – свежий, "
+"фруктовый и энергичный аромат, который помогает поднять настроение и "
+"взбодрить.<br>4.Кедр – древесный, земной и маскулинный аромат, придающий "
+"ощущение стабильности и надежности.<br>5.Яблоко и корица – теплый и уютный "
+"аромат, напоминающий о зимних праздниках и домашних условиях.<br>"
+
+#: main/templates/main/index.html:691
+msgid "accordionTitleSeven"
+msgstr "Какая цена на курс?"
+
+#: main/templates/main/index.html:696
+msgid "accordionTextSeven"
+msgstr ""
+"1.Ваниль – теплый, сладкий и уютный аромат, напоминающий о домашнем уюте."
+"<br>2.Лаванда – приятный, успокаивающий и релаксирующий запах, который "
+"помогает снять стресс и напряжение.<br>3.Розовый грейпфрут – свежий, "
+"фруктовый и энергичный аромат, который помогает поднять настроение и "
+"взбодрить.<br>4.Кедр – древесный, земной и маскулинный аромат, придающий "
+"ощущение стабильности и надежности.<br>5.Яблоко и корица – теплый и уютный "
+"аромат, напоминающий о зимних праздниках и домашних условиях.<br>"
+
+#: main/templates/main/index.html:703
+msgid "accordionTitleEight"
+msgstr "Есть ли сертификат на курс?"
+
+#: main/templates/main/index.html:708
+msgid "accordionTextEight"
+msgstr ""
+"1.Ваниль – теплый, сладкий и уютный аромат, напоминающий о домашнем уюте."
+"<br>2.Лаванда – приятный, успокаивающий и релаксирующий запах, который "
+"помогает снять стресс и напряжение.<br>3.Розовый грейпфрут – свежий, "
+"фруктовый и энергичный аромат, который помогает поднять настроение и "
+"взбодрить.<br>4.Кедр – древесный, земной и маскулинный аромат, придающий "
+"ощущение стабильности и надежности.<br>5.Яблоко и корица – теплый и уютный "
+"аромат, напоминающий о зимних праздниках и домашних условиях.<br>"
+
+#: main/templates/main/index.html:722
+msgid "buyTitle"
+msgstr "Покупайте больше, экономьте больше"
+
+#: main/templates/main/index.html:726
+msgid "buyLink"
+msgstr "В каталог"
+
+#: main/templates/main/index.html:739
+msgid "formTitle"
+msgstr "Подпишись на наши акции"
+
+#: main/templates/main/index.html:746
+msgid "formLink"
+msgstr "Подписаться"
+
+#~ msgid "Английский"
+#~ msgstr "Английский"

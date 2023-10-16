@@ -1,0 +1,803 @@
+{% load static %}
+{% load i18n %}
+{% get_current_language as current_lang %}
+
+
+<!DOCTYPE html>
+<html lang="{{ current_lang }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&family=Roboto:ital@1&family=Yeseva+One&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="{% static 'main/css/bootstrap/bootstrap.css' %}">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!-- style reset -->
+    <link rel="stylesheet" href="{% static 'main/css/reset.css'%}">
+    <!-- style css -->
+    <link rel="stylesheet" href="{% static 'main/css/style.css'%}">
+    <!-- style media -->
+    <link rel="stylesheet" href="{% static 'main/css/media.css' %}">
+    <title>
+        {% translate "title" %}
+    </title>
+</head>
+<body>
+    <div class="shell">
+         <!-- header -->
+        <header class="position-fixed w-100" id="navbar">
+            <div class="container header">
+                <a href="" class="logo">
+                    <img src="{% static 'main/img/logo.svg'%}" alt="logo" class="logo__img">
+                </a>
+                
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li><a href="#aboutUs" class="nav__link">{% translate "aboutUs" %}</a></li>
+                        <li><a href="#goods" class="nav__link">{% translate "goods" %}</a></li>
+                        <li ><a href="#teachers" class="nav__link">{% translate "teachers" %}</a></li>
+                        <li ><a href="#reviews" class="nav__link">{% translate "reviews" %}</a></li>
+                        <li ><a href="#courses" class="nav__link">{% translate "courses" %}</a></li>
+                        <li ><a href="#footer" class="nav__link">{% translate "contact" %}</a></li>
+                    </ul>
+                </nav>
+            </li>
+            <li class="dropdown" name="language">
+              <button class="nav-item__dropdown nav__link" href="#" >
+                {% translate "langues" %}
+                <i class="fa-solid fa-sort-down"></i>
+              </button>
+              <ul class="dropdown-list hidden">
+                {% get_available_languages as LANGUAGES %}
+                {% get_language_info_list for LANGUAGES as languages %}
+                {% for language in languages %}
+                    {% if language.code !=  current_lang %}
+                    <li><a class="dropdown-link nav__link" href="{% url 'change_lang' language.code %}">{{language.name}}</a></li>
+                    {% endif %}
+                {% endfor %}
+              
+              </ul>
+            </li>
+                <button class="nav-menu__button">
+                    <span class="nav-menu__span"></span>
+                    <span class="nav-menu__span"></span>
+                    <span class="nav-menu__span"></span>
+                    <span class="nav-menu__span"></span>
+                    <span class="nav-menu__span"></span>
+                </button>
+                <button class="nav-menu__cross hidden">
+                    <span class="nav__cross-button"></span>
+                    <span class="nav__cross-button"></span>
+                </button>
+                <nav class="nav-menu hidden">
+                    <ul class="nav-menu__list">
+                        <li><a href="#aboutUs" class="nav-menu__link">{% translate "aboutUs" %}</a></li>
+                        <li><a href="#goods" class="nav-menu__link">{% translate "goods" %}</a></li>
+                        <li ><a href="#teachers" class="nav-menu__link">{% translate "teachers" %}</a></li>
+                        <li ><a href="#reviews" class="nav-menu__link">{% translate "reviews" %}</a></li>
+                        <li ><a href="#courses" class="nav-menu__link">{% translate "courses" %}</a></li>
+                        <li ><a href="#footer" class="nav-menu__link">{% translate "contact" %}</a></li>
+                        <li class="dropdown-mobil">
+                            <button class="nav-item__dropdown dropdown-mobil__link" href="#" >
+                              Dropdown
+                              <i class="fa-solid fa-sort-down"></i>
+                            </button>
+                            <ul class="dropdown-list__mobile hidden">
+                              <li><a class="dropdown-link dropdown-mobil__link" href="#">{% translate "uk" %}</a></li>
+                              <li><a class="dropdown-link dropdown-mobil__link" href="#">{% translate "en" %}</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- main -->
+       {% block content%}
+       <main>
+        <section class="atmosphere">
+            <div class="container">
+                <div class="row">
+                    <div class="atmosphere-block col-12">
+                        <div class="atmosphere-block__content col-xl-4 col-lg-5 col-md-5 col-sm-6 col-8">
+                            <h1 class="atmosphere-content__title">
+                                {% translate "atmosphereTitle" %}
+                            </h1>
+                            <p class="atmosphere-content__text">
+                                {% translate "atmosphereText" %}
+                            </p>
+                            <a href="#" class="section__button-buy button-size__big">
+                                {% translate "buy" %}
+                            </a>
+                         </div>
+                        <div class="atmosphere-block__photo col-xl-9 col-lg-8 col-md-7 col-sm-6 col-3"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about-us" id="aboutUs">
+            <div class="container">
+                <div class="row">
+                    <div class="about-us__block col-12">
+                        <div class="about__block-content col-xl-4 col-sm-6 col-7">
+                            <h2 class="section-title title__color-white">
+                               {% translate "aboutUsTitle" %}
+                            </h2>
+                            <p class="about-content__text">
+                                <span>
+                                    {% translate "aboutTextOne" %}
+                                <span>
+                                    {% translate "aboutTextTwo" %}
+                                </span>
+                            </p>
+                        </div>
+                        <div class="about-us__block-photo col-xl-8 col-sm-6 col-4">
+                            <div class="about-photo__item">
+                                <img class="about-photo__moment" src="{% static 'main/img/aboutUs/aboutUs-left.jpg' %}" alt="moment"></img>
+                                <p class="about-photo__text">
+                                   {% translate "aboutMomentText" %}
+                                </p>
+                            </div>
+                            <div class="about-photo__atmosphere class="about-photo__item">
+                                <img src="{% static 'main/img/aboutUs/aboutUs-center.png' %}" alt="atmosphere"></img>
+                                <p class="about-photo__text">
+                                    {% translate "aboutAtmosphereText" %}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="goods" id="goods">
+            <div class="container">
+                <div class="row">
+                    <div class="goods-block col-12">
+                        <div class="goods-block__content col-xl-3 col-lg-5 col-md-5 col-sm-7 col-10">
+                            <h3 class="section-title title__color-black">
+                               {% translate "goodsTitle" %}
+                            </h3>
+                            <p class="section-text">
+                                {% translate "goodsText" %}
+                            </p>
+                        </div>
+                        <div class="goods-items col-xl-8 col-lg-7 col-md-7 col-sm-12">
+                            <div class="goods-item col-xl-5 col-lg-5 col-md-5 col-sm-5 col-5">
+                                <img src="{% static 'main/img/goods/goods-one.png' %}" alt="">
+                            <p class="goods-item__price">10$</p>
+                            <h5 class="goods-item__title">""{% translate "goodsTitleHeart" %}""</h5>
+                            <p class="goods-item__text">
+                                {% translate "goodsTextToryandi" %}
+                            </p>
+                            <a href="#" class="section__button-buy button-size__big ">
+                                {% translate "buy" %}
+                            </a>
+                            </div>
+                            <div class="goods-item col-xl-5 col-lg-5 col-md-5 col-sm-5 col-5">
+                                <img src="{% static 'main/img/goods/goods-two.png' %}" alt="">
+                            <p class="goods-item__price">20$</p>
+                            <h5 class="goods-item__title">
+                                ""{% translate "goodsTitleCharm" %}""
+                            </h5>
+                            <p class="goods-item__text">
+                                {% translate "goodsTextLavender" %}
+                            </p>
+                            <a href="#" class="section__button-buy button-size__big ">
+                                {% translate "buy" %}
+                            </a>
+                            </div>
+                            <div class="goods-item col-xl-5 col-lg-5 col-md-5 col-sm-5 col-5">
+                                <img src="{% static 'main/img/goods/goods-three.png' %}" alt="goods-three">
+                            <p class="goods-item__price">10$</p>
+                            <h5 class="goods-item__title"> ""{% translate "goodsTitleVeselka" %}""</h5>
+                            <p class="goods-item__text">
+                                {% translate "goodsTextLime" %}
+                            </p>
+                            <a href="#" class="section__button-buy button-size__big ">
+                                {% translate "buy" %}
+                            </a>
+                            </div>
+                            <div class="goods-item col-xl-5 col-lg-5 col-md-5 col-sm-5 col-5">
+                                <img src="{% static 'main/img/goods/goods-four.png' %}" alt="goods-four">
+                            <p class="goods-item__price">10$</p>
+                            <h5 class="goods-item__title">""{% translate "goodsTextLove" %}""</h5>
+                            <p class="goods-item__text">
+                                {% translate "goodsTextLavender" %}
+                            </p>
+                            <a href="#" class="section__button-buy button-size__big ">
+                                {% translate "buy" %}
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="creation">
+            <div class="container">
+                <div class="row">
+                    <div class="creation-block">
+                        <div class="creation-block__content col-xl-4 col-md-4 col-sm-6 col-6">
+                            <h4 class="section-title title__color-black">
+                                {% translate "creationTitle" %}
+                            </h4>
+                            <p class="section-text">
+                                {% translate "creationText" %}
+                            </p>
+                        </div>
+                        <div class="creation-block__items col-xl-8 col-md-8 col-sm-12">
+                            <div class="creation-block__item col-xl-5 col-lg-5 col-md-5 col-sm-5 col-8">
+                               <div class="col-xl-6 col-lg-6 col-md-5 creation-item__info one_position-num">
+                                <p class="creation-item__text">
+                                   {% translate "materialsText" %}
+                                </p>
+                                <div class="creation-item__numbers">
+                                    01
+                                </div>
+                               </div>
+                                <img class="col-xl-5 col-lg-5 col-md-6" src="{% static 'main/img/creation/creation-01.png' %}" alt="creation-01">
+                            </div>
+                            <div class="creation-block__item col-xl-5 col-lg-5 col-md-5 col-sm-5 col-8">
+                                <div class="col-xl-6 col-lg-6 col-md-5 creation-item__info one_position-num">
+                                 <p class="creation-item__text">
+                                    {% translate "formsText" %}
+                                 </p>
+                                 <div class="creation-item__numbers">
+                                     02
+                                 </div>
+                                </div>
+                                 <img class="col-xl-5 col-lg-5 col-md-6" src="{% static 'main/img/creation/creation-02.jpg' %}" alt="creation-02">
+                            </div>
+                            <div class="creation-block__item col-xl-5 col-lg-5 col-md-5 col-sm-5 col-8">
+                                 <img class="col-xl-5 col-lg-5 col-md-6" src="{% static 'main/img/creation/creation-03.png' %}" alt="creation-03">
+                                 <div class="col-xl-6 col-lg-6 col-md-5 creation-item__info two_position-num">
+                                    <p class="creation-item__text">
+                                        {% translate "waxText" %}
+                                    </p>
+                                    <div class="creation-item__numbers">
+                                        03
+                                    </div>
+                                   </div>
+                                </div>
+                            <div class="creation-block__item col-xl-5 col-lg-5 col-md-5 col-sm-5 col-8">
+                                <img class="col-xl-5 col-lg-5 col-md-6" src="{% static 'main/img/creation/creation-04.png' %}" alt="creation-04">
+                                <div class="col-xl-6 col-lg-6 col-md-5 creation-item__info two_position-num">
+                                   <p class="creation-item__text">
+                                    {% translate "wickText" %}
+                                   </p>
+                                   <div class="creation-item__numbers">
+                                       04
+                                   </div>
+                                  </div>
+                            </div>
+                            <div class="creation-block__item col-xl-5 col-lg-5 col-md-5 col-sm-5 col-8">
+                            <div class="col-xl-6 col-lg-6 col-md-5 creation-item__info one_position-num">
+                             <p class="creation-item__text">
+                                {% translate "materialsText" %}
+                             <div class="creation-item__numbers">
+                                 05
+                             </div>
+                            </div>
+                             <img class="col-xl-5 col-lg-5 col-md-6" src="{% static 'main/img/creation/creation-05.png' %}" alt="creation-05">
+                            </div>
+                            <div class="creation-block__item col-xl-5 col-lg-5 col-md-5 col-sm-5 col-8">
+                             <div class="col-xl-6 col-lg-6 col-md-5 creation-item__info one_position-num">
+                              <p class="creation-item__text">
+                               {% translate "fillingFormsText" %}
+                              </p>
+                              <div class="creation-item__numbers">
+                                  06
+                              </div>
+                             </div>
+                              <img class="col-xl-5 col-lg-5 col-md-6" src="{% static 'main/img/creation/creation-06.png' %}" alt="creation-06">
+                            </div>
+                            <div class="creation-block__item col-xl-5 col-lg-5 col-md-5 col-sm-5 col-8">
+                            <img class="col-xl-5 col-lg-5 col-md-6" src="{% static 'main/img/creation/creation-07.png' %}" alt="creation-07">
+                            <div class="col-xl-6 col-lg-6 col-md-5 creation-item__info two_position-num">
+                               <p class="creation-item__text">
+                                {% translate "waxPreparationText" %}
+                               </p>
+                               <div class="creation-item__numbers">
+                                   07
+                               </div>
+                              </div>
+                            </div>
+                            <div class="creation-block__item col-xl-5 col-lg-5 col-md-5 col-sm-5 col-8">
+                           <img class="col-xl-5 col-lg-5 col-md-6" src="{% static 'main/img/creation/creation-08.png' %}" alt="creation-08">
+                           <div class="col-xl-6 col-lg-6 col-md-5 creation-item__info two_position-num">
+                              <p class="creation-item__text">
+                                {% translate "preparingWickText" %}
+                              </p>
+                              <div class="creation-item__numbers">
+                                  08
+                              </div>
+                             </div>
+                            </div>
+                            <div class="creation-block__item col-xl-5 col-lg-5 col-md-5 col-sm-5 col-8">
+                                <div class="col-xl-6 col-lg-5 col-md-5 creation-item__info one_position-num">
+                                 <p class="creation-item__text">
+                                    {% translate "materialsText" %}
+                                 </p>
+                                 <div class="creation-item__numbers">
+                                     09
+                                 </div>
+                                </div>
+                                 <img class="col-xl-5 col-lg-5 col-md-6" src="{% static 'main/img/creation/creation-09.png' %}" alt="creation-09">
+                             </div>
+                             <div class="creation-block__item col-xl-5 col-lg-5 col-md-5 col-sm-5 col-8">
+                                 <div class="col-xl-6 col-lg-5 col-md-5 creation-item__info one_position-num">
+                                  <p class="creation-item__text">
+                                    {% translate "fillingFormText" %}
+                                  </p>
+                                  <div class="creation-item__numbers">
+                                      10
+                                  </div>
+                                 </div>
+                                  <img class="col-xl-5 col-lg-5 col-md-6" src="{% static 'main/img/creation/creation-10.png' %}" alt="creation-10">
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="courses" id="courses">
+            <div class="container">
+                <div class="row">
+                    <div class="courses-block col-12">
+                        <div class="courses-block__content col-xl-4 col-lg-4 col-md-3 col-sm-6 col-7">
+                            <h4 class="section-title  title__color-black">
+                                {% translate "coursesTitle" %}
+                            </h4>
+                            <p class="section-text">
+                                {% translate "coursesText" %}
+                            </p>
+                        </div>
+                        <div class="courses-block__items col-xl-7 col-lg-7 col-md-8 col-sm-12 col-12">
+                            <div class="courses-block__item col-xl-5 col-lg-5 col-md-5 col-sm-5">
+                               <div class="courses-item__info">
+                                <img src="{% static 'main/img/courses/courses-01.svg' %}" alt="courses-01">
+                                <p class="courses-item__text">
+                                    {% translate "makingCandlesText" %}
+                                   </p>
+                                   <p class="courses-item__years">
+                                    <span>{% translate "studyText" %}</span> - 20 {% translate "year" %}
+                                   </p>
+                                   <p class="courses-item__price">
+                                     {% translate "price" %} - 40$
+                                    </p>
+                        </div>
+                               <div class="courses-item__content">
+                                <h5 class="courses-content__title">
+                                    {% translate "manufacturingBasicsTitle" %}
+                                </h5>
+                                <p class="courses-content__info">
+                                    {% translate "manufacturingBasicsText" %}
+                                </p>
+                                <a href="#" class="section__button-buy button-size__small">
+                                    {% translate "buyCourses" %} 
+                                </a>
+                               </div>
+                            </div>
+                            <div class="courses-block__item col-xl-5 col-lg-5 col-md-5 col-sm-5">
+                                <div class="courses-item__info">
+                                 <img src="{% static 'main/img/courses/courses-02.svg' %}" alt="courses-02">
+                                 <p class="courses-item__text">
+                                    {% translate "artAromatherapyTitle" %}
+                                 </p>
+                                 <p class="courses-item__years">
+                                     <span>{% translate "studyText" %}</span> - 20 {% translate "year" %}
+                                 </p>
+                                 <p class="courses-item__price">
+                                    {% translate "price" %} - 40$
+                                 </p>
+                                </div>
+                                <div class="courses-item__content">
+                                 <h5 class="courses-content__title">
+                                    {% translate "artAromatherapyTitle" %}
+                                 </h5>
+                                 <p class="courses-content__info">
+                                    {% translate "artAromatherapyText" %}
+                                 </p>
+                                 <a href="#" class="section__button-buy button-size__small">
+                                    {% translate "buyCourses" %} 
+                                 </a>
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="teachers" id="teachers">
+            <div class="container">
+                <div class="row">
+                    <div class="teachers-block">
+                        <div class="teachers-block__content col-xl-3 col-lg-3 col-md-3 col-sm-6 col-8">
+                            <h4 class="section-title title__color-white">
+                                {% translate "teachersTitle" %}
+                            </h4>
+                            <p class="section-text text__color-white">
+                                {% translate "teachersText" %}
+                        </div>
+                        <div class="teachers-block__items col-xl-9 col-lg-9 col-md-9 col-sm-12">
+                            <div class="teachers-block__item col-xl-5 col-lg-5 col-md-5 col-sm-5">
+                                <img class="col-md-9" src="{% static 'main/img/teachers/teachers-01.png' %}" alt="teachers-01">
+                                <div class="teachers-item__info">
+                                    <h5 class="teachers-info__title">
+                                       {% translate "teachersNameOne" %}
+                                    </h5>
+                                    <p class="teachers-info__text">
+                                        {% translate "teacherTextOne" %}
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="teachers-block__item col-xl-5 col-lg-5 col-md-5 col-sm-5">
+                                <img class="col-md-9" src="{% static 'main/img/teachers/teachers-02.png' %}" alt="teachers-02">
+                                <div class="teachers-item__info">
+                                    <h5 class="teachers-info__title">
+                                        {% translate "teachersNameTwo" %}
+                                    </h5>
+                                    <p class="teachers-info__text">
+                                        {% translate "teacherTextTwo" %}
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="teachers-block__item col-xl-5 col-lg-5 col-md-5 col-sm-5">
+                                <img class="col-md-9" src="{% static 'main/img/teachers/teachers-03.png' %}" alt="teachers-03">
+                                <div class="teachers-item__info">
+                                    <h5 class="teachers-info__title">
+                                        {% translate "teachersNameThree" %}
+                                    </h5>
+                                    <p class="teachers-info__text">
+                                        {% translate "teacherTextThree" %}
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="teachers-block__item col-xl-5 col-lg-5 col-md-5 col-sm-5">
+                                <img class="col-md-9" src="{% static 'main/img/teachers/teachers-04.png' %}" alt="teachers-04">
+                                <div class="teachers-item__info">
+                                    <h5 class="teachers-info__title">
+                                        {% translate "teachersNameFour" %}
+                                    </h5>
+                                    <p class="teachers-info__text">
+                                        {% translate "teacherTextFour" %}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reviews" id="reviews">
+            <div class="container">
+                <div class="row">
+                    <div class="reviews-block">
+                        <div class="reviews-block__content col-xl-3 col-lg-4 col-md-3 col-sm-10 col-10">
+                            <h4 class="section-title title__color-black">
+                                {% translate "reviewsTitle" %}
+                            </h4>
+                            <p class="section-text">
+                                {% translate "reviewsText" %}
+                            </p>
+                        </div>
+                        <div class="swiper col-xl-8 col-lg-8 col-sm-12">
+                            <div id="carouselReviews" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                  <button type="button" data-bs-target="#carouselReviews" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                  <button type="button" data-bs-target="#carouselReviews" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                  <button type="button" data-bs-target="#carouselReviews" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                   <div class="carousel-inner__video col-xl-6 col-lg-6 col-md-4 col-sm-6 col-5">
+                                    <img src="{% static 'main/img/reviews/reviews-bg.png' %}" alt="">
+                                    <a class="carousel-video__link" href="#"><img src="{% static 'main/img/reviews/reviews-play.png' %}" alt=""></a>
+                                   </div>
+                                   <div class="carousel-inner__content col-xl-5 col-lg-5 col-md-4 col-sm-6 col-5">
+                                    <a href="#"><img src="{% static 'main/img/icon/instagram.svg' %}" alt="instagram"></a>
+                                    <h5 class="carousel-content__title">
+                                        {% translate "carouselNameOne" %}
+                                    </h5>
+                                    <p class="carousel-content__text">
+                                        {% translate "carouselTextOne" %}
+                                    </p>
+                                    <div class="carousel-content__link-pozition">
+                                        <a href="#" class="section__button-buy carousel-content__link">
+                                            {% translate "buyProduct" %} 
+                                        </a>
+                                    </div>
+                                   </div>
+                                  </div>
+                                  <div class="carousel-item">
+                                    <div class="carousel-inner__video col-xl-6 col-lg-6 col-md-4 col-sm-6 col-5">
+                                        <img src="{% static 'main/img/reviews/reviews-bg.png' %}" alt="">
+                                        <a class="carousel-video__link" href="#"><img src="{% static 'main/img/reviews/reviews-play.png' %}" alt=""></a>
+                                       </div>
+                                       <div class="carousel-inner__content col-xl-5 col-lg-5 col-md-4 col-sm-6 col-5">
+                                        <a href="#"><img src="{% static 'main/img/icon/instagram.svg' %}" alt=""></a>
+                                        <h5 class="carousel-content__title">
+                                            {% translate "carouselNameTwo" %}
+                                        </h5>
+                                        <p class="carousel-content__text">
+                                            {% translate "carouselTextTwo" %}
+                                        </p>
+                                        <div class="carousel-content__link-pozition">
+                                            <a href="#" class="section__button-buy carousel-content__link">
+                                                {% translate "buyProduct" %} 
+                                            </a>
+                                        </div>
+                                       </div>
+                                  </div>
+                                  <div class="carousel-item">
+                                    <div class="carousel-inner__video col-xl-6 col-lg-6 col-md-4 col-sm-6 col-5">
+                                        <img src="{% static 'main/img/reviews/reviews-bg.png' %}" alt="">
+                                        <a class="carousel-video__link" href="#"><img src="{% static 'main/img/reviews/reviews-play.png' %}" alt=""></a>
+                                       </div>
+                                       <div class="carousel-inner__content col-xl-5 col-lg-5 col-md-4 col-sm-6 col-5">
+                                        <a href="#"><img src="{% static 'main/img/icon/instagram.svg' %}" alt=""></a>
+                                        <h5 class="carousel-content__title">
+                                            {% translate "carouselNameThree" %}
+                                        </h5>
+                                        <p class="carousel-content__text">
+                                            {% translate "carouselTextThree" %}
+                                        </p>
+                                        <div class="carousel-content__link-pozition">
+                                            <a href="#" class="section__button-buy carousel-content__link">
+                                                {% translate "buyProduct" %} 
+                                            </a>
+                                        </div>
+                                       </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="certificates">
+            <div class="container">
+                <div class="row">
+                    <div class="certificates-block">
+                       <div class="certificates-block__content col-xl-3 col-lg-3 col-md-3 col-sm-7 col-7">
+                        <h4 class="section-title title__color-black">
+                           {% translate "certificatesTitle" %}
+                        </h4>
+                        <p class="section-text">
+                            {% translate "certificatesText" %}
+                        </p>
+                       </div>
+                       <div class="swiper col-xl-8 col-lg-8 col-md-8 col-sm-12 col-9 position-relative">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                <img src="{% static 'main/img/certificates/certificates-01.png' %}" alt="">
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="{% static 'main/img/certificates/certificates-02.png' %}" alt="">
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="{% static 'main/img/certificates/certificates-01.png' %}" alt="">
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="{% static 'main/img/certificates/certificates-02.png' %}" alt="">
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="{% static 'main/img/certificates/certificates-01.png' %}" alt="">
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="{% static 'main/img/certificates/certificates-02.png' %}" alt="">
+                              </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="questions">
+            <div class="container">
+                <div class="row">
+                    <div class="questions-block">
+                        <div class="questions-block__content col-xl-4 col-lg-3 col-md-3 col-sm-12">
+                            <h5 class="section-title title__color-black">
+                               {% translate "questionsTitle" %}
+                            </h5>
+                        </div>
+                        <div class="accordion-block col-xl-8 col-lg-8 col-md-8 col-sm-12">
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        {% translate "accordionTitleOne" %}
+                                    </button>
+                                  </h2>
+                                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        {% translate "accordionTextOne" %}
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        {% translate "accordionTitleTwo" %}
+                                    </button>
+                                  </h2>
+                                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        {% translate "accordionTextTwo" %}
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        {% translate "accordionTitleThree" %}
+                                    </button>
+                                  </h2>
+                                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        {% translate "accordionTextThree" %}
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFour">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseOne">
+                                        {% translate "accordionTitleFour" %}
+                                      </button>
+                                    </h2>
+                                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingheadingFour" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            {% translate "accordionTextFour" %}
+                                        </div>>
+                                    </div>
+                                  </div>
+                                  <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFive">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseTwo">
+                                        {% translate "accordionTitleFive" %}
+                                      </button>
+                                    </h2>
+                                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headinheadingFiveTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            {% translate "accordionTextFive" %}
+                                        </div>
+                                    </div>
+                                  </div>
+                                  <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingSix">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
+                                        {% translate "accordionTitleSix" %}
+                                      </button>
+                                    </h2>
+                                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body">
+                                        {% translate "accordionTextSix" %}
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingSeven">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseThree">
+                                        {% translate "accordionTitleSeven" %}
+                                      </button>
+                                    </h2>
+                                    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            {% translate "accordionTextSeven" %}
+                                        </div>
+                                    </div>
+                                  </div>
+                                  <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingEight">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseThree">
+                                        {% translate "accordionTitleEight" %}
+                                      </button>
+                                    </h2>
+                                    <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                                       <div class="accordion-body">
+                                        {% translate "accordionTextEight" %}
+                                    </div>
+                                  </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="buy">
+            <div class="container">
+                <div class="row">
+                    <div class="buy-block">
+                        <h4 class="section-title text__color-white buy-block__title col-xl-7 col-md-6 col-sm-6">
+                         {% translate "buyTitle" %}
+                        </h4>
+                       <div class="col-3">
+                        <a href="#" class="section__button-buy buy-block__link ">
+                            {% translate "buyLink" %}
+                        </a>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="stock">
+            <div class="container">
+                <div class="row">
+                    <div class="stock-block">
+                        <form method="post" class="form col-xl-7 col-lg-6 col-md-6 col-sm-12">
+                            <h5 class="section-title title__color-black stock-block__title">
+                                {% translate "formTitle" %}
+                            </h5>
+                            {% csrf_token %} 
+                            {{ form.name }}
+                            {{ form.email}}
+                            <span>{{ error }}</span>
+                            <button href="#" class="section__button-buy stock-block__link" type="submit">
+                                {% translate "formLink" %}
+                            </button>
+                        </form>
+                        <div class="stock-block__photo col-xl-4 col-lg-5 col-md-5"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+       </main>
+       {% endblock %}
+        <!-- footer -->
+        <footer class="footer" id="footer">
+           <div class="footer__item container-xx container-xl container-lg container-md container-media">
+            <a href="#" class="footer-logo">
+                <img src="{% static 'main/img/logo.svg' %}" alt="logo" class="logo__img">
+            </a>
+            <nav class="nav-footer">
+                <ul class="nav-footer__list">
+                    <li><a href="#aboutUs" class="nav-footer__link">{% translate "aboutUs" %}</a></li>
+                    <li><a href="#goods" class="nav-footer__link">{% translate "goods" %}</a></li>
+                    <li><a href="#teachers" class="nav-footer__link">{% translate "teachers" %}</a></li>
+                    <li><a href="#reviews" class="nav-footer__link">{% translate "reviews" %}</a></li>
+                    <li><a href="#courses" class="nav-footer__link">{% translate "courses" %}</a></li>
+                    <li><a href="#footer" class="nav-footer__link">{% translate "contact" %}goods</a></li>
+                </ul>
+            </nav>
+            <div class="footer__block-info">
+                <a href="#" class="footer__tel">+45 34 56 78 92</a>
+                <a href="#" class="footer__email">candelsCandels@gmail.com</a>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link">
+                        <img src="{% static 'main/img/icon/facebook-logo.png' %}" alt="facebook" class="footer-social-img">
+                    </a>
+                    <a href="#" class="footer__social-link">
+                        <img src="{% static 'main/img/icon/facebook-logo.png' %}" alt="instagram" class="footer-social-img">
+                    </a>
+                    <a href="#" class="footer__social-link">
+                        <img src="{% static 'main/img/icon/facebook-logo.png' %}" alt="in" class="footer-social-img">
+                    </a>
+                    <a href="#" class="footer__social-link">
+                        <img src="{% static 'main/img/icon/facebook-logo.png' %}" alt="youtube" class="footer-social-img">
+                    </a>
+                </div>
+            </div>
+           </div>
+        </footer>
+        <a class="arrow-bg" href="#">
+            <img src="{% static 'main/img/icon/arrow-bg.svg' %}" alt="">
+        </a>
+    </div>
+    <!-- bootstrap -->
+    <script src="{% static 'main/js/bootsrap/bootstrap.js' %}"></script>
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- script js -->
+    <script src="{% static 'main/js/app.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,517 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-10-16 01:24+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: candler/settings.py:121
+msgid "English"
+msgstr "English"
+
+#: candler/settings.py:122
+msgid "Русский"
+msgstr "Russian"
+
+#: main/forms.py:13
+msgid "Name"
+msgstr "Name"
+
+#: main/forms.py:16
+msgid "Email"
+msgstr "E-mail"
+
+#: main/templates/main/index.html:28
+msgid "title"
+msgstr "HM-Candler"
+
+#: main/templates/main/index.html:42 main/templates/main/index.html:80
+#: main/templates/main/index.html:764
+msgid "aboutUs"
+msgstr "About us"
+
+#: main/templates/main/index.html:43 main/templates/main/index.html:81
+#: main/templates/main/index.html:765
+msgid "goods"
+msgstr "Catalog"
+
+#: main/templates/main/index.html:44 main/templates/main/index.html:82
+#: main/templates/main/index.html:766
+msgid "teachers"
+msgstr "Team"
+
+#: main/templates/main/index.html:45 main/templates/main/index.html:83
+#: main/templates/main/index.html:767
+msgid "reviews"
+msgstr "reviews"
+
+#: main/templates/main/index.html:46 main/templates/main/index.html:84
+#: main/templates/main/index.html:768
+msgid "courses"
+msgstr "courses"
+
+#: main/templates/main/index.html:47 main/templates/main/index.html:85
+#: main/templates/main/index.html:769
+msgid "contact"
+msgstr "contact"
+
+#: main/templates/main/index.html:53
+msgid "langues"
+msgstr "langues"
+
+#: main/templates/main/index.html:92
+msgid "uk"
+msgstr ""
+
+#: main/templates/main/index.html:93
+msgid "en"
+msgstr ""
+
+#: main/templates/main/index.html:109
+msgid "atmosphereTitle"
+msgstr "Create an atmosphere of comfort and harmony!"
+
+#: main/templates/main/index.html:112
+msgid "atmosphereText"
+msgstr ""
+"Create a special atmosphere in your home with our eco-friendly and quality "
+"100% natural soy wax products."
+
+#: main/templates/main/index.html:115 main/templates/main/index.html:178
+#: main/templates/main/index.html:191 main/templates/main/index.html:202
+#: main/templates/main/index.html:213
+msgid "buy"
+msgstr "Buy"
+
+#: main/templates/main/index.html:129
+msgid "aboutUsTitle"
+msgstr "About us"
+
+#: main/templates/main/index.html:133
+msgid "aboutTextOne"
+msgstr ""
+"Bogdan, the creator of the brand, is not always interested in making a "
+"variety of things at home. He regularly experimented with different "
+"materials and tools, trying his hand at many industries, including candle "
+"making."
+
+#: main/templates/main/index.html:135
+msgid "aboutTextTwo"
+msgstr ""
+"Soy wax is made from soybeans grown in Denmark and is environmentally "
+"friendly and healthy."
+
+#: main/templates/main/index.html:143
+msgid "aboutMomentText"
+msgstr "Enjoy the moment"
+
+#: main/templates/main/index.html:149
+msgid "aboutAtmosphereText"
+msgstr "Create your favorite atmosphere"
+
+#: main/templates/main/index.html:163
+msgid "goodsTitle"
+msgstr "Our products"
+
+#: main/templates/main/index.html:166
+msgid "goodsText"
+msgstr ""
+"We use only the best quality materials: soy wax, wax dyes, high quality "
+"fragrance oils and cotton wicks. The shades of the candles are very "
+"harmoniously combined with the aroma, creating an unforgettable atmosphere "
+"in your home."
+
+#: main/templates/main/index.html:173
+msgid "goodsTitleHeart"
+msgstr "Heart of love"
+
+#: main/templates/main/index.html:175
+msgid "goodsTextToryandi"
+msgstr ""
+"Smell: delicate aroma of rose and vanilla.For what: for a romantic atmosphere"
+
+#: main/templates/main/index.html:185
+msgid "goodsTitleCharm"
+msgstr "Whirlwind of love"
+
+#: main/templates/main/index.html:188 main/templates/main/index.html:210
+msgid "goodsTextLavender"
+msgstr ""
+"Smell: delicate aroma of lavender.Why: to create an atmosphere of comfort"
+
+#: main/templates/main/index.html:197
+msgid "goodsTitleVeselka"
+msgstr "Rainbow"
+
+#: main/templates/main/index.html:199
+msgid "goodsTextLime"
+msgstr "Smell: Fresh lime scent.Why: for energy and freshness in the room."
+
+#: main/templates/main/index.html:208
+msgid "goodsTextLove"
+msgstr "Feminine charm"
+
+#: main/templates/main/index.html:227
+msgid "creationTitle"
+msgstr "Stages of creating candles"
+
+#: main/templates/main/index.html:230
+msgid "creationText"
+msgstr "Making a soy wax candle can consist of the following steps:"
+
+#: main/templates/main/index.html:237 main/templates/main/index.html:281
+#: main/templates/main/index.html:324
+msgid "materialsText"
+msgstr ""
+"Preparation of materials: small fragments of soy wax, candle wick, "
+"fragrances, dyes and other additional materials."
+
+#: main/templates/main/index.html:248
+msgid "formsText"
+msgstr ""
+"Preparing the Mold: Choosing a mold for the candle and preparing it for "
+"filling with wax."
+
+#: main/templates/main/index.html:260
+msgid "waxText"
+msgstr ""
+"Wax preparation: melting soy wax in a melting device to the desired "
+"temperature. Add flavors and colors if necessary."
+
+#: main/templates/main/index.html:271
+msgid "wickText"
+msgstr ""
+"Preparing the wick: inserting the wick into the mold and fixing it so that "
+"it is evenly tense."
+
+#: main/templates/main/index.html:291
+msgid "fillingFormsText"
+msgstr ""
+"Filling the mold: Pour wax into the mold until it is completely filled. Wait "
+"for it to establish itself."
+
+#: main/templates/main/index.html:303
+msgid "waxPreparationText"
+msgstr ""
+"Wax preparation: melting soy wax in a melting device to the desired "
+"temperature. Add flavors and colors if necessary."
+
+#: main/templates/main/index.html:314
+msgid "preparingWickText"
+msgstr ""
+"Preparing the wick: inserting the wick into the mold and fixing it so that "
+"it is evenly tense."
+
+#: main/templates/main/index.html:335
+msgid "fillingFormText"
+msgstr ""
+"Filling the mold: Pour wax into the mold until it is completely filled. Wait "
+"for it to establish itself."
+
+#: main/templates/main/index.html:354
+msgid "coursesTitle"
+msgstr "Our courses"
+
+#: main/templates/main/index.html:357
+msgid "coursesText"
+msgstr ""
+"Our courses allow you to take the first step in a new career or deepen your "
+"knowledge in your field, develop as a professional, and improve your quality "
+"of life."
+
+#: main/templates/main/index.html:365
+msgid "makingCandlesText"
+msgstr "Candle Making Basics"
+
+#: main/templates/main/index.html:368 main/templates/main/index.html:393
+msgid "studyText"
+msgstr "Education"
+
+#: main/templates/main/index.html:368 main/templates/main/index.html:393
+msgid "year"
+msgstr "year"
+
+#: main/templates/main/index.html:371 main/templates/main/index.html:396
+msgid "price"
+msgstr "price"
+
+#: main/templates/main/index.html:376
+msgid "manufacturingBasicsTitle"
+msgstr "Candle making basics"
+
+#: main/templates/main/index.html:379
+msgid "manufacturingBasicsText"
+msgstr "We will teach the basics of making candles from different materials."
+
+#: main/templates/main/index.html:382 main/templates/main/index.html:407
+msgid "buyCourses"
+msgstr "Buy a course"
+
+#: main/templates/main/index.html:390 main/templates/main/index.html:401
+msgid "artAromatherapyTitle"
+msgstr "The art of aromatherapy"
+
+#: main/templates/main/index.html:404
+msgid "artAromatherapyText"
+msgstr ""
+"We will study the art of aromatherapy and making candles with different "
+"scents."
+
+#: main/templates/main/index.html:422
+msgid "teachersTitle"
+msgstr "Our teachers"
+
+#: main/templates/main/index.html:425
+msgid "teachersText"
+msgstr ""
+"These people work together to create courses for you that will help you "
+"start your own business or hobby."
+
+#: main/templates/main/index.html:432
+msgid "teachersNameOne"
+msgstr "Teacher Bogdan"
+
+#: main/templates/main/index.html:435
+msgid "teacherTextOne"
+msgstr "Has 4 years of teaching and work experience"
+
+#: main/templates/main/index.html:443
+msgid "teachersNameTwo"
+msgstr "Teacher Anna"
+
+#: main/templates/main/index.html:446
+msgid "teacherTextTwo"
+msgstr "Has 6 years of teaching and work experience"
+
+#: main/templates/main/index.html:454
+msgid "teachersNameThree"
+msgstr "Teacher Galina"
+
+#: main/templates/main/index.html:457
+msgid "teacherTextThree"
+msgstr "Teaches the field of design and decoration"
+
+#: main/templates/main/index.html:465
+msgid "teachersNameFour"
+msgstr "Marketer Olga"
+
+#: main/templates/main/index.html:468
+msgid "teacherTextFour"
+msgstr "Will help you with advertising"
+
+#: main/templates/main/index.html:483
+msgid "reviewsTitle"
+msgstr "Reviews from clients"
+
+#: main/templates/main/index.html:486
+msgid "reviewsText"
+msgstr ""
+"Our customers have different ages, status, activities and interests, but "
+"they have one thing in common - they strive for harmony and find joy in the "
+"small joys of life, which create an atmosphere of comfort and harmony in "
+"their home."
+
+#: main/templates/main/index.html:505
+msgid "carouselNameOne"
+msgstr "Ivan Pilipenko"
+
+#: main/templates/main/index.html:508
+msgid "carouselTextOne"
+msgstr ""
+"Я заказал свечу в форме сердечка в День Святого Валентина для моей девушки и "
+"она была просто невероятна! Запах был очень приятным и романтичным, а форма "
+"сердечка была совершенной для этого праздника. Моя девушка была очень "
+"довольна подарком, и я точно закажу еще свеч от этого сайта!"
+
+#: main/templates/main/index.html:512 main/templates/main/index.html:532
+#: main/templates/main/index.html:552
+msgid "buyProduct"
+msgstr "Buy product"
+
+#: main/templates/main/index.html:525
+msgid "carouselNameTwo"
+msgstr "Ivan Pilipenko"
+
+#: main/templates/main/index.html:528
+msgid "carouselTextTwo"
+msgstr ""
+"Я заказал свечу в форме сердечка в День Святого Валентина для моей девушки и "
+"она была просто невероятна! Запах был очень приятным и романтичным, а форма "
+"сердечка была совершенной для этого праздника. Моя девушка была очень "
+"довольна подарком, и я точно закажу еще свеч от этого сайта!"
+
+#: main/templates/main/index.html:545
+msgid "carouselNameThree"
+msgstr "Ivan Pilipenko"
+
+#: main/templates/main/index.html:548
+msgid "carouselTextThree"
+msgstr ""
+"Я заказал свечу в форме сердечка в День Святого Валентина для моей девушки и "
+"она была просто невероятна! Запах был очень приятным и романтичным, а форма "
+"сердечка была совершенной для этого праздника. Моя девушка была очень "
+"довольна подарком, и я точно закажу еще свеч от этого сайта!"
+
+#: main/templates/main/index.html:570
+msgid "certificatesTitle"
+msgstr "Certificates quality"
+
+#: main/templates/main/index.html:573
+msgid "certificatesText"
+msgstr "Certificates provide trust and confidence to our clients."
+
+#: main/templates/main/index.html:611
+msgid "questionsTitle"
+msgstr "FAQ"
+
+#: main/templates/main/index.html:619
+msgid "accordionTitleOne"
+msgstr "What scents are available for candles?"
+
+#: main/templates/main/index.html:624
+msgid "accordionTextOne"
+msgstr ""
+"1.Vanilla is a warm, sweet and cozy aroma reminiscent of home comfort.2."
+"Lavender is a pleasant, soothing and relaxing scent that helps relieve "
+"stress and tension.3.Pink Grapefruit is a fresh, fruity and energetic aroma "
+"that helps lift your spirits and invigorate you.4.Cedar is a woody, earthy "
+"and masculine scent that imparts a sense of stability and security.5.Apple "
+"and cinnamon - a warm and cozy aroma, reminiscent of winter holidays and "
+"home conditions."
+
+#: main/templates/main/index.html:631
+msgid "accordionTitleTwo"
+msgstr "How long do the candles burn?"
+
+#: main/templates/main/index.html:636
+msgid "accordionTextTwo"
+msgstr ""
+"1.Vanilla is a warm, sweet and cozy aroma reminiscent of home comfort.2."
+"Lavender is a pleasant, soothing and relaxing scent that helps relieve "
+"stress and tension.3.Pink Grapefruit is a fresh, fruity and energetic aroma "
+"that helps lift your spirits and invigorate you.4.Cedar is a woody, earthy "
+"and masculine scent that imparts a sense of stability and security.5.Apple "
+"and cinnamon - a warm and cozy aroma, reminiscent of winter holidays and "
+"home conditions."
+
+#: main/templates/main/index.html:643
+msgid "accordionTitleThree"
+msgstr "Is it possible to order a custom candle design?"
+
+#: main/templates/main/index.html:648
+msgid "accordionTextThree"
+msgstr ""
+"1.Vanilla is a warm, sweet and cozy aroma reminiscent of home comfort.2."
+"Lavender is a pleasant, soothing and relaxing scent that helps relieve "
+"stress and tension.3.Pink Grapefruit is a fresh, fruity and energetic aroma "
+"that helps lift your spirits and invigorate you.4.Cedar is a woody, earthy "
+"and masculine scent that imparts a sense of stability and security.5.Apple "
+"and cinnamon - a warm and cozy aroma, reminiscent of winter holidays and "
+"home conditions."
+
+#: main/templates/main/index.html:655
+msgid "accordionTitleFour"
+msgstr "What are the delivery options?"
+
+#: main/templates/main/index.html:660
+msgid "accordionTextFour"
+msgstr ""
+"1.Vanilla is a warm, sweet and cozy aroma reminiscent of home comfort.2."
+"Lavender is a pleasant, soothing and relaxing scent that helps relieve "
+"stress and tension.3.Pink Grapefruit is a fresh, fruity and energetic aroma "
+"that helps lift your spirits and invigorate you.4.Cedar is a woody, earthy "
+"and masculine scent that imparts a sense of stability and security.5.Apple "
+"and cinnamon - a warm and cozy aroma, reminiscent of winter holidays and "
+"home conditions."
+
+#: main/templates/main/index.html:667
+msgid "accordionTitleFive"
+msgstr "How to pay for an order?"
+
+#: main/templates/main/index.html:672
+msgid "accordionTextFive"
+msgstr ""
+"1.Vanilla is a warm, sweet and cozy aroma reminiscent of home comfort.2."
+"Lavender is a pleasant, soothing and relaxing scent that helps relieve "
+"stress and tension.3.Pink Grapefruit is a fresh, fruity and energetic aroma "
+"that helps lift your spirits and invigorate you.4.Cedar is a woody, earthy "
+"and masculine scent that imparts a sense of stability and security.5.Apple "
+"and cinnamon - a warm and cozy aroma, reminiscent of winter holidays and "
+"home conditions."
+
+#: main/templates/main/index.html:679
+msgid "accordionTitleSix"
+msgstr "How long does the course last?"
+
+#: main/templates/main/index.html:684
+msgid "accordionTextSix"
+msgstr ""
+"1.Vanilla is a warm, sweet and cozy aroma reminiscent of home comfort.2."
+"Lavender is a pleasant, soothing and relaxing scent that helps relieve "
+"stress and tension.3.Pink Grapefruit is a fresh, fruity and energetic aroma "
+"that helps lift your spirits and invigorate you.4.Cedar is a woody, earthy "
+"and masculine scent that imparts a sense of stability and security.5.Apple "
+"and cinnamon - a warm and cozy aroma, reminiscent of winter holidays and "
+"home conditions."
+
+#: main/templates/main/index.html:691
+msgid "accordionTitleSeven"
+msgstr "What is the price for the course?"
+
+#: main/templates/main/index.html:696
+msgid "accordionTextSeven"
+msgstr ""
+"1.Vanilla is a warm, sweet and cozy aroma reminiscent of home comfort.2."
+"Lavender is a pleasant, soothing and relaxing scent that helps relieve "
+"stress and tension.3.Pink Grapefruit is a fresh, fruity and energetic aroma "
+"that helps lift your spirits and invigorate you.4.Cedar is a woody, earthy "
+"and masculine scent that imparts a sense of stability and security.5.Apple "
+"and cinnamon - a warm and cozy aroma, reminiscent of winter holidays and "
+"home conditions."
+
+#: main/templates/main/index.html:703
+msgid "accordionTitleEight"
+msgstr "Is there a certificate for the course?"
+
+#: main/templates/main/index.html:708
+msgid "accordionTextEight"
+msgstr ""
+"1.Vanilla is a warm, sweet and cozy aroma reminiscent of home comfort.2."
+"Lavender is a pleasant, soothing and relaxing scent that helps relieve "
+"stress and tension.3.Pink Grapefruit is a fresh, fruity and energetic aroma "
+"that helps lift your spirits and invigorate you.4.Cedar is a woody, earthy "
+"and masculine scent that imparts a sense of stability and security.5.Apple "
+"and cinnamon - a warm and cozy aroma, reminiscent of winter holidays and "
+"home conditions."
+
+#: main/templates/main/index.html:722
+msgid "buyTitle"
+msgstr "Buy more, save more"
+
+#: main/templates/main/index.html:726
+msgid "buyLink"
+msgstr "To catalog"
+
+#: main/templates/main/index.html:739
+msgid "formTitle"
+msgstr "Subscribe to our promotions"
+
+#: main/templates/main/index.html:746
+msgid "formLink"
+msgstr "Subscribe"
+
+#~ msgid "Английский"
+#~ msgstr "Английский"

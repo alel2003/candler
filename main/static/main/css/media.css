@@ -1,0 +1,670 @@
+@media (max-width:992px) {
+    /* header */
+    .nav__list {
+        column-gap: 10px;
+    }
+    /* atmosphere */
+    .atmosphere-block__photo {
+        background: url('../img/atmosphere/atmosphere-lg.svg');
+        height: 415px;
+        margin-left: -50px;
+        background-repeat: no-repeat;
+        width: 100%;
+    }
+    /* goods */
+    .goods-item__text {
+      font-size: 10px;
+    }
+    /* creation */
+    .creation-block__item  {
+        height: 255px;
+    }
+    .carousel-inner__video {
+        height: 312px;
+    }
+    /* buy */
+    .buy-block {
+        column-gap: 70px;
+    }
+    .buy-block__title {
+        flex-basis: 553px;
+    }
+    .buy-block__link {
+        max-height: 60px;
+    }
+    .accordion-button {
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    /* header */
+    .nav__link {
+        font-size: 8px;
+    }
+    .header-tel__num {
+        font-size: 10px;
+    }
+    .header-tel__num::before {
+        max-width: 14px;
+        max-height: 14px;
+        top: -5px;
+    }
+    /* footer */
+    .footer__item {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .nav-footer__link {
+        font-size: 10px;
+        line-height: 150%;
+    }
+    .footer-logo {
+        width: 20%;
+    }
+    .footer__block-info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 15px;
+    }
+    /* atmosphere */
+    .atmosphere-block__photo {
+        background: url('../img/atmosphere/atmosphere-md.svg');
+        height: 415px;
+      
+    }
+    /* creation */
+    .creation-item__text {
+        font-size: 8px;
+    }
+    .creation-item__numbers {
+        font-size: 20px;
+    }
+    .creation-block__item {
+        height: 150px;
+    }
+    .creation {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    /* courses */
+    .courses-block {
+        column-gap: 30px;
+    }
+    .courses-item__text {
+        font-size: 10px;
+        padding: 13px;
+        top: 120px;
+    }
+    .courses-item__years {
+        font-size: 10px;
+        padding: 13px;
+        top: 175px;
+    }
+    .courses-item__price {
+        font-size: 10px;
+        padding: 13px;
+    }
+    .courses-content__title {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+    .courses-content__text {
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+    .courses {
+        padding-top: 25px;
+        padding-bottom: 50px;
+    }
+
+
+    .section-title {
+        font-size: 15px;
+    }
+    .button-size__big {
+        padding: 13px 30px;
+    }
+    .section-text {
+        font-size: 10px;
+    }
+
+    /* goods */
+    .goods {
+        padding-top: 50px;
+        padding-bottom: 25px;
+    }
+    /* teachers */
+    .teachers-block {
+        column-gap: 25px;
+    }
+    .teachers-block__items {
+        column-gap: 25px;
+    } 
+    .teachers-item__info {
+        padding: 9px 5px;
+        bottom: 17px;
+        right: -5px;
+    }
+    .teachers-info__title {
+        font-size: 8px;
+    }
+    .teachers-info__text {
+        font-size: 6.75px;
+    }
+    .teachers-item__info {
+        width: 106px;
+    }
+    .carousel-content__title {
+        font-size: 12px;
+    }
+    .carousel-content__text {
+        font-size: 10px;
+    }
+    .carousel-content__link {
+        font-size: 8px;
+        padding: 15px 20px;
+    } 
+    .carousel-content__link {
+        margin-top: 30px;
+    }
+    .carousel-inner__video {
+        height: 233px;
+    }
+    /* buy */
+    .buy-block__link {
+        max-height: none;
+        font-size: 8px;
+    }
+    .buy-block {
+        justify-content: space-between;
+    }
+    .buy {
+        padding: 66px 0px;
+    }
+    .buy-block__title {
+        flex-basis: auto;
+    }
+    /* stock */
+    .stock-block__photo {
+        height: 427px;
+    }
+    
+   
+
+}
+
+@media (max-width: 576px) {
+    /* header */
+    .header {
+        padding-bottom: 15px;
+    }
+    .nav {
+        display: none;
+    }
+    .nav-menu__button {
+        display:block;
+        position: relative;
+        width: 30px;
+        height: 25px;
+        background-color: transparent;
+        border: none;
+        z-index: 3;
+    }
+    .nav-menu__span {
+        position: absolute;
+        background-color: var(--beige-two--);
+        max-height: 3px;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+    .nav-menu__span:nth-child(2) {
+        top: 5px;
+    }
+    .nav-menu__span:nth-child(3) {
+        top: 10px;
+    }
+    .nav-menu__span:nth-child(4) {
+        top: 15px;
+    }
+    .nav-menu__span:nth-child(5) {
+       top: 20px;
+    }
+    .nav-menu__cross {
+        display:block;
+        position: relative;
+        width: 30px;
+        height: 25px;
+        background-color: transparent;
+        border: none;
+        z-index: 3;
+    }
+    .nav__cross-button {
+        position: absolute;
+        background-color: var(--white--);
+        max-height: 3px;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        right: 0;
+        top: 10px;
+        bottom: 0;
+    }
+    .nav__cross-button:nth-child(1){
+        transform: rotate(137deg);
+    }
+    .nav__cross-button:nth-child(2){
+        transform: rotate(45deg);
+    }
+    .nav-menu {
+        position: absolute;
+        background-color: var(--brown--);
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        height: 100vh;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        text-align: center;
+        transition: 0.5s;
+        display: flex;
+        justify-content: center;
+    }
+    .nav-menu__link {
+        font-family: var(--comfortaa--);
+        font-weight: 400;
+        font-size: 10px;
+        text-transform: uppercase;
+        color: var(--white--);
+        line-height: 150%;
+    }
+    .dropdown {
+        display: none;
+    }
+    .dropdown-mobil {
+        position: relative;
+        width: 100px;
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+    }
+    .dropdown-list__mobile {
+        position: absolute;
+        top: 23px;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 0px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 5px;
+        padding: 10px;
+    }
+
+    .dropdown-mobil__link {
+        font-family: var(--comfortaa--);
+        font-weight: 400;
+        font-size: 10px;
+        text-transform: uppercase;
+        color: var(--white--);
+        line-height: 150%;
+    }
+    /* footer */
+    .footer__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-footer__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+        text-align: center;
+        row-gap: 22px;
+        margin-bottom: 0;
+        column-gap: 0px;
+    }
+    .footer-logo {
+        width: auto;
+    }
+    .footer__block-info {
+        margin-top: 50px;
+    }
+    /* atmosphere */
+    .atmosphere {
+        padding-bottom: 50px;
+    }
+    .atmosphere-block__photo {
+        background: url('../img/atmosphere/atmosphere-sm.svg');
+        height: 309px;
+      
+    }
+    .about-photo__atmosphere {
+        display: none;
+    }
+    .about-content__text {
+        font-size: 10px;
+    }
+    .atmosphere {
+        padding-top: 100px;
+    }
+    /* goods */
+    .goods-block {
+        flex-direction: column;
+    }
+    .goods-block__content {
+        text-align: center;
+        margin: 0 auto;
+    }  
+    .goods-block {
+        row-gap: 30px;
+    }   
+    .goods-block__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .goods-block {
+        display: flex;
+        flex-direction: column;
+    }
+    /* creation      */
+    .creation-block {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+    }   
+    .creation-block__content {
+        text-align: center;
+    }           
+    .creation-block__items {
+        display: flex;
+        justify-content: center;
+    }
+    .creation-block__items {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 20px;
+    }
+    .creation-block__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .creation-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    /* courses */
+    .courses-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 20px;
+    }
+    .courses-block__content {
+        margin: 0 auto;
+        text-align: center;
+    }
+    .courses-block__item {
+        width: 40%;
+    }
+    .courses-content__info {
+        font-size: 10px;
+    }
+    .courses-block__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    /* teachers */
+    .teachers {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .teachers-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 30px;
+    }
+    .teachers-block__content {
+        text-align: center;
+    }
+    .teachers-block__items {
+        column-gap: 50px;
+    }
+    .teachers-item__info {
+        right: -22px;
+    }
+    /* reviews */
+    .reviews-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 30px;
+    }
+    .reviews-block__content {
+        text-align: center;
+    }
+    .reviews {
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+    .carousel-indicators [data-bs-target] {
+        width: 28px;
+    }
+    /* questions */
+    .questions {
+        padding-top: 25px;
+        padding-bottom: 50px;
+    }
+    .questions-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 30px;
+    }
+    .questions-block__content {
+        text-align: center;
+    }
+    /* stock */
+    .stock-block__photo {
+        display: none;
+    }
+    .stock {
+        padding: 50px 0px;
+    }
+    .accordion-button {
+        font-size: 12px;
+    }
+    .accordion-block {
+        width: 100%;
+    }
+    .form {
+        padding: 30px;
+    }
+    /* certificates */
+    .certificates-block {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .swiper-pagination-bullet {
+        width: 28px;
+    }
+    .certificates {
+        padding: 25px 0px;
+    }
+    .certificates-block__content {
+       margin: 0 auto;
+       text-align: center;
+    }
+} 
+
+@media (max-width: 480px) {
+    /* courses */
+    .courses-item__text {
+        padding: 8px;
+        top: 100px;
+    }
+    .courses-item__years {
+        padding: 8px;
+        top: 154px;
+    }
+    .courses-item__price {
+        padding: 8px;
+    }
+    .courses-content__info {
+        font-size: 8px;
+        margin-bottom: 10px;
+    }
+    /* about-us */
+    .about-us__block {
+        column-gap: 25px;
+    }
+    .about-photo__text {
+        display: none;
+    }
+    /* stock */
+    .stock-block__link {
+        font-size: 8px;
+        padding: 10px 15px;
+        max-width: 85px;
+    }
+    /* buy */
+    .buy-block__link {
+        padding: 15px;
+    }
+    
+   
+
+}
+
+@media (max-width:400px) {
+    /* atmosphere */
+    .atmosphere-block__photo {
+        background: url('../img/atmosphere/atmosphere-small.svg');
+        height: 151px;
+        background-repeat: no-repeat;
+      
+    }
+    .atmosphere-content__title  {
+        font-size: 18px;
+    }
+    .atmosphere-content__text {
+        font-size: 10px;
+    }
+    /* about-us */
+    .about-content__text {
+        font-size: 8px;
+    }
+    /* goods */
+    .goods-item {
+        max-width: 141px;
+    }
+    .goods-item__title {
+        font-size: 10px;
+        margin-top: 5px;
+    }
+    .goods-item__price {
+        font-size: 10px;
+        margin-top: 4px;
+    }
+    /* creation */
+    .creation-block__item {
+        height: 100px;
+        column-gap: 15px;
+    }
+    /* courses */
+    .courses-block__items {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 25px;
+    }
+    .courses-block__item {
+        width: 255px;
+    }
+    /* teachers */
+    .teachers-block__items {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .teachers-item__info {
+        width: 130px;
+        padding: 5px;
+        right: -33px;
+    }
+    .section-text {
+        font-size: 8px;
+    }
+    .carousel-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 12px;
+    }
+    .carousel-inner__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .carousel-content__text {
+        margin-top: 10px;
+    }
+    .carousel-content__link {
+        margin-top: 15px;
+    }
+    .creation-block__item {
+        width: 100%;
+    }
+    .carousel-inner__video {
+        width: 100%;
+    }
+    .carousel-inner__content {
+        width: 100%;
+    }
+    .carousel-inner__video {
+        text-align: center;
+    }
+    /* buy */
+    .buy {
+        padding: 42px 0;
+    }
+    .buy-block__link {
+        padding: 10px;
+    }
+    .accordion-block {
+        width: 100%;
+    }
+}
