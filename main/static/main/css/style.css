@@ -206,6 +206,7 @@ main {
 }
 .about-us__block-photo {
     display: flex;
+   
     align-items: center;
     column-gap: 40px;
 }
